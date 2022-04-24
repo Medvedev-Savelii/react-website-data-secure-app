@@ -1,7 +1,12 @@
 import React from "react";
+import Hero from "./components/hero/Hero";
 
 function App() {
-  return <h1>Hello world</h1>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
 export default App;
