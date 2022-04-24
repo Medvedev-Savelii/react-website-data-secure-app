@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./NavbarStyles.css";
 import { SiDatabricks } from "react-icons/si";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
-
   const [nav, setNav] = useState(false);
   const handleNav = () => setNav(!nav);
 
@@ -23,7 +22,7 @@ const Navbar = () => {
           <button>Sign in</button>
         </ul>
         <div className="hamburger" onClick={handleNav}>
-          <FaBars className="icon" />
+          {!nav ? <FaBars className="icon" /> : <FaTimes className="icon" />}
         </div>
       </div>
     </div>
