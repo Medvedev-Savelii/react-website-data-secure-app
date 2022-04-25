@@ -10,6 +10,7 @@ import {
   FiLinkedin,
   FiDribbble,
 } from "react-icons/fi";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -20,7 +21,15 @@ const Footer = () => {
             <SiDatabricks className="icon" />
             <h2>Secured.</h2>
           </div>
-          <BsFillArrowUpCircleFill className="icon" />
+          <Link
+            activeClass="active"
+            to="top"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <BsFillArrowUpCircleFill className="icon" />
+          </Link>
         </div>
         <div className="col-container">
           <div className="col">
